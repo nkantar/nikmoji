@@ -15,12 +15,8 @@ body {
   margin: 0 auto;
 }
 
-header,
-footer {
-  margin: 25px 0;
-}
-
 header {
+  margin: 25px 0 15px;
   border-bottom: 1px dashed #999;
 }
 
@@ -57,6 +53,7 @@ td a {
 }
 
 footer {
+  margin: 15px 0 25px;
   border-top: 1px dashed #999;
   font-size: 75%;
 }
