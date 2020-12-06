@@ -1,0 +1,5 @@
+[build]
+  publish = "output/"
+  command = "make build"
+[context.production]
+  environment = { PYTHON_VERSION = "3.7" }
