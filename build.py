@@ -34,7 +34,6 @@ shutil.copytree(ASSETS_PATH, OUTPUT_ASSETS_PATH)
 path = Path(INPUT_PATH).glob("**/[!.]*")
 images = sorted([element for element in path if element.is_file()])
 
-
 # generate table, populate and write index page
 with open(TEMPLATE_ROW_PATH) as row_file:
     # generate table HTML
