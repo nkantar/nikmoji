@@ -51,7 +51,7 @@
             <th>
               Name
               <br />
-              <small>(click to copy without colons)</small>
+              <small>(copy link)</small>
             </th>
           </tr>
         </thead>
@@ -75,7 +75,11 @@
         const elements = document.getElementsByClassName("copy");
         for (var idx = 0; idx < elements.length; idx++) {
           elements[idx].addEventListener("click", (event) => {
-            navigator.clipboard.writeText(event.target.innerText);
+            const name = event.target.innerText;
+            const title = "nikmoji";
+            const url = window.origin + "/#" + name;
+            navigator.clipboard.writeText(url);
+            history.pushState({}, title, url);
           });
         }
       });

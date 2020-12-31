@@ -33,6 +33,10 @@ tr:last-child > td {
   border-bottom: none;
 }
 
+tr:target {
+  background: #eee;
+}
+
 small {
   color: #666;
   font-weight: normal;
