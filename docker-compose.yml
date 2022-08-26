@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  nikmoji:
+    build:
+      context: .
+    container_name: nikmoji
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    restart: always
+    ports:
+      - "9050:9050"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - nikmoji_data:/data
+      - nikmoji_config:/config
+
+volumes:
+  nikmoji_data:
+    external: false
+  nikmoji_config:
+    external: false
