@@ -1,7 +1,7 @@
 qsc88co8sogcc80ww0wowc0k.5.78.24.144.sslip.io:80,
 qsc88co8sogcc80ww0wowc0k.5.78.24.144.sslip.io:443,
-nikmoji.nkantar.com:80,
-nikmoji.nkantar.com:443 {
+nikmoji.pileof.tools:80,
+nikmoji.pileof.tools:443 {
     root * /srv
     file_server
 
